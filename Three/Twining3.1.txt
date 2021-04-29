@@ -1,0 +1,52 @@
+TWINING EXAMPLE 3.5 - Player-input MadLibs
+Uses Chapbook
+
+1.  Step 1
+
+propNoun: 'Somebody'
+--
+Type a proper noun: the name of a real or imaginary person, place or named thing, e.g., 'Louise Pringle,' 'Jimmy One Nose,' 'H.M.S. Winnebago.'
+
+{text input for: 'propNoun'}
+
+[[Next ->Step 2]]
+
+2.  Step 2
+
+adverb: 'furiously'
+--
+Type an adverb, e.g. 'triumphantly,' 'softly,' 'twice.'
+
+{text input for: 'adverb'}
+
+[[Next ->Step 3]]
+
+3.  Step 3
+
+verb: 'ignores'
+--
+Select a verb:
+
+{dropdown menu for: 'verb', choices: ['avoids', 'wrangles', 'removes','finagles','blasts','enjoys','terrifies','exhausts','tickles','amuses']}
+
+[[Next ->Step 4]]
+
+4.  Step 4
+
+org: 'the Modern Language Association'
+--
+Select a civic organization:
+
+{dropdown menu for: 'org', choices: ['the Ancient Order of Voles', 'the Liars League', 'International Mothers Helpers','West Dingle Auxiliary Football Club','Democratic Nihilists of New Jersey','the Icelandic Beer Party','the Modern Language Association','the Shepherds Union','Men with Hats','the Committee of the Hole','Friends of Linda']}
+
+[[Next ->Step 5]]
+
+5.  Step 5
+
+enders: ["in bed","for a limited time","in stores everywhere","as seen on TV","in your loudest dreams","unless prohibited by ordinance","with relish","in theory","against medical advice","while you wait","on the premises"]
+
+ender: enders[Math.floor(random.fraction*enders.length)]
+--
+{propNoun} {adverb} {verb} {org} {ender}.
+
+[[Play again? ->Step 1]]

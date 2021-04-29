@@ -1,0 +1,53 @@
+TWINING EXERCISE 1.2 - TWO DOORS
+Uses Chapbook
+
+1.  Passage: "The Reign of the Two Doors"
+
+You find youself in the Two Door Universe.  It was slightly less expensive than the Three or Four Door models, and all we could afford.
+
+[[Go through the left door->Not Right]]
+
+[[Go through the right door]]
+
+
+2.  Passage: "Not Right"
+
+You find yourself in the Place of No Winning.  It is a simple room with, of course, two doors.
+
+[[The Init Door->The Reign of the Two Doors]]
+
+[[The Exit Door->The Reign of the Two Doors]] 
+
+
+3.  Passage "Go through the right door"
+
+Stepping through the right door, you find yourself in another, very similar room containing two doors.
+
+[[Take the right door]]
+
+[[Take the not-right door->Not Right]]
+
+
+4.  Passage "Take the right door"
+
+Advancing boldly through the dexterior portal, you find yourself in another version of the same stupid room.  Someone is trying to make a point, you suppose.
+
+[[Left! Maybe it will work this time->Not Right]]
+
+[[Right!]]
+
+
+5.  Passage: "Right!"
+
+Right.  Always take the door on the right.  You get it, now.
+
+[[Always right->The Reign of the Two Doors]]
+
+[[Left Behind]]
+
+
+6.  Passage: "Left Behind"
+
+Moving at last through the door the writer apparently doesn't want you to take, you rise above confines of the labyrinth, leaving other fools behind.
+
+Rise up, you lovely winner.

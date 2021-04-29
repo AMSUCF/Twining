@@ -1,0 +1,327 @@
+TWINING EXERCISE 5.5 - TWINE BOX
+Uses Chapbook
+
+1.  Passage: "And... box"
+
+r1: false
+r2: false
+r3: false
+r4: false
+r5: false
+r6: false
+passClues: ''
+--
+<div style="text-align: center">
+{embed image: 'title.png', alt: 'Box with twine'}
+</div>
+
+<div style="text-align: right">
+[[b e g i n ->1 The Lecture Hall]]
+<br />
+</div>
+
+
+2.  Passage: "The Lecture Hall"
+
+r1: true
+passClues: ''
+--
+<p style="background-color: #AAAAAA; color: #FFFFFF; font-size: 15pt; font-weight: 700; padding-left: 5px">
+Lecture Hall
+</p>
+<p>
+Oak paneling, ranked benches, psychic traces of boredom and befuddlement.  At the battered podium a clove cigarette smolders.  The old blackboard could use cleaning.  You can make out some words there:
+</p>
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+{embed passage: 'right'}
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+<div style="font: 9pt/14pt Verdana; font-weight: 700; color: #BB0000; padding-left: 30px;">
+{passClues}
+</div><br/>
+
+---
+
+<div style="text-align: center">
+[[ahead->3 Writers Room]] . [[up->6 Top of the World]] . [[behind->4 Lunch Room]] . [[down->5 Scary Basement]]
+
+{embed passage: 'tracker'}
+</div>
+
+
+3. Passage: "Committee Room"
+
+r2: true
+passClues: ''
+--
+<p style="background-color: #AAAAAA; color: #FFFFFF; font-size: 15pt; font-weight: 700; padding-left: 5px">
+Committee Room
+</p>
+<p>
+The door opens enough to admit the Deputy Under-Secretary's owlish mug.  "Private meeting," she informs you.  Behind her you hear various voices saying:
+</p>
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+{embed passage: 'right'}
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+<div style="font: 9pt/14pt Verdana; font-weight: 700; color: #BB0000; padding-left: 30px;">
+{passClues}
+</div><br/>
+
+---
+
+<div style="text-align: center">
+[[ahead->3 Writers Room]] . [[down->5 Scary Basement]] . [[behind->4 Lunch Room]] . [[up->6 Top of the World]]
+
+{embed passage: 'tracker'}
+</div>
+
+
+4.  Passage: "Writers Room"
+
+r3: true
+passClues: ''
+--
+<p style="background-color: #AAAAAA; color: #FFFFFF; font-size: 15pt; font-weight: 700; padding-left: 5px">
+Writers Room
+</p>
+<p>
+As you attempt to peek in, the Head Writer shouts "SCRAM, KID" and tosses a wad of ill-considered passages in your general direction. "Can't you see we've got an I.F. to finish here?"  As the door slams you hear several voices shouting:
+</p>
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+{embed passage: 'right'}
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+<div style="font: 9pt/14pt Verdana; font-weight: 700; color: #BB0000; padding-left: 30px;">
+{passClues}
+</div><br/>
+
+---
+
+<div style="text-align: center">
+[[up->6 Top of the World]] . [[behind->1 The Lecture Hall]] . [[down->5 Scary Basement]] . [[ahead->2 Committee Room]]
+
+{embed passage: 'tracker'}
+</div>
+
+
+5.  Passage: "Lunch Room"
+
+r4: true
+passClues: ''
+--
+<p style="background-color: #AAAAAA; color: #FFFFFF; font-size: 15pt; font-weight: 700; padding-left: 5px">
+Lunchroom
+</p>
+<p>
+For some reason nobody in here has any clothes on!  Guess nobody told you it's a Naked Lunchroom.  All eyes stare at your mortifying lack of bareness.  As you back out the door you hear some people mutter:
+</p>
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+{embed passage: 'right'}
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+<div style="font: 9pt/14pt Verdana; font-weight: 700; color: #BB0000; padding-left: 30px;">
+{passClues}
+</div><br/>
+
+---
+
+<div style="text-align: center">
+[[down->5 Scary Basement]] - [[behind->1 The Lecture Hall] - [[up->6 Top of the World]] - [[ahead->2 Committee Room]] 
+
+{embed passage: 'tracker'}
+</div>
+
+
+6.  Passage: "Scary Basement"
+
+r5: true
+passClues: ''
+--
+<p style="background-color: #AAAAAA; color: #FFFFFF; font-size: 15pt; font-weight: 700; padding-left: 5px">
+omygosh it's the SCARY BASEMENT!
+</p>
+<p>
+An ancient lightbulb flickers once and dies horribly.  The room is filled with monitory shapes... canopic jars... eldritch apparatus... golf bags.  A voice like an old cigar cries out "GO BACK!"  You are about to do just that when a hand appears, scrawling words across the skin of reality:
+</p>
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+{embed passage: 'right'}
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+<div style="font: 9pt/14pt Verdana; font-weight: 700; color: #BB0000; padding-left: 30px;">
+{passClues}
+</div><br/>
+
+---
+
+<div style="text-align: center">
+[[upstairs->3 Writers Room]] - [[abovedecks->1 The Lecture Hall]] - [[overhead->4 Lunch Room]] - [[up yonder->2 Committee Room]] 
+
+{embed passage: 'tracker'}
+</div>
+
+
+7.  Passage: "Top of the World"
+
+r6: true
+passClues: ''
+--
+<p style="background-color: #AAAAAA; color: #FFFFFF; font-size: 15pt; font-weight: 700; padding-left: 5px">
+Top of the World
+</p>
+<p>
+It's a cross between one of those revolving restaurants and the bridge of some uncanonical starship.  The waiteroid human takes your drink order and shows you to a console.  You idly thumb some buttons on the LCARS and beam up half the Central Business District.  Voices at nearby tables are saying:
+</p>
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+{embed passage: 'right'}
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+[if random.coinFlip]
+{embed passage: 'wrong'}
+[cont'd]
+
+<div style="font: 9pt/14pt Verdana; font-weight: 700; color: #BB0000; padding-left: 30px;">
+{passClues}
+</div><br/>
+
+---
+
+<div style="text-align: center">
+[[downward->3 Writers Room]] - [[beneath->2 Committee Room]] - [[under->4 Lunch Room]] - [[below->1 The Lecture Hall]]
+
+{embed passage: 'tracker'}
+</div>
+
+
+8.  Passage: "right"
+
+rt: ["THING WITH FEATHERS","FAIREY OBAMA","ANCIENT FUNNYMAN BOB","AND CHANGE","FINGERS CROSSED","I FEEL LUCKY","LOOK, A SWALLOW!","BRIGHTENING SKIES","OPPOSITE OF NOPE","WHAT YOU NEED WHEN OUT OF ROPE","PANDORA SPECIALTY","BOTTOM OF THE BOX","IT'S ALIVE!","PONTIFICAL RHYME","CLINTONIAN HOMETOWN","'A VERY UNRULY EMOTION' - G. STEINEM","PRICEY DIAMOND","SPRINGS ETERNAL","IN THE HUMAN BREAST","FAITH N CHARITY N THE OTHER 1","CAPE OF GOOD","FOR THE BEST PREPARE FOR THE WORST","CROSSING HEART AND","CHICAGO HAD IT ONCE","NEITHER GREAT NOR WHITE"]
+
+passClues: passClues + rt[Math.floor(random.fraction*rt.length)] + '<br />'
+--
+
+
+9.  Passage: "wrong"
+
+wt: ["SEVENTH OF SIX","IF YOU CAN READ THIS","THIS IS NOT A CLUE","TIME FADES AWAY","IS TIME EMITS I","I IS ANOTHER","YOU ARE NOT READING THIS","THE MOST SUBLIME ACT","EXPECT POISON FROM STANDING WATER","YOU ARE NOT THE TARGET","THIS IS THE WAY THE WORLD BENDS","THE HIGH COST OF ANTIMONY","RHINOCEROS IS MY PROFESSION","WORD THAT TIME FORGOT","CENTRIPETAL","RHOMBOID","HOLD FOR THE NEXT ROBOCALL","TORVEX","CREPUSCULE WITH NELLY","BANDICOOT'S DESIRE","SILENT SERVIETTE","DIAGRAM OF RADIANCE","ANAGRAM OF ITSELF","A DOOR IS A JAR","JUST BECAUSE YOU SAY SO","ONE IS NEVER TOO YOUNG FOR BISCUITS","ALL MEN ARE PORTALS","TWO WOULD MAKE A CRAB","YOU ARE CATCHING A CRAB","UNRECOGNIZED PREPOSITION","ITALIA IRREDENTATA","TIMEWARDS","WE SAY HELLO","GRAND MAL RECIPE","WELTSCHMERZENLEBENSDIENST","BALDY MISPELLED","COULD HAVE BEEN SOMEONE","WELL SO COULD ANYONE","SO NEVERMIND","NOW THIS","WORLD WITHOUT AND","HAMSTRING OF THE WEST","NOT STIRRED","THE OPPOSITE OF DIRT","MAN OF PARTS","WOMAN OF THE WEST","CHANGE OF SCENERY","ACT III SCENE I","PRINCE OF POLAND","FEARING AID","MALICIOUS TWITCHERY","BAD TOUCH","WORST OF SEVERAL","GOOD DOG","VENDING MARINES","HOLE CLOTH","FICTIVITY","MEMORABLE FANCY","LONG, STRANGE TRIP","PAY NO ATTENTION TO THAT MAN","LAND OF 1000 CHANCES","MEXICAN BAKE OFF","ABILITY TO SWING","COLOR OF A SKY","BANNED CRAYOLA","PONTIFICAL DITTY","HER, TO THEM THAT KNOW","WHAT A FOOL RETRIEVES","HOLE IN SKY","GIFT FOR THIRD ANNIVERSARY","EXTRAJUDICIAL","BLATANT, CHROMATIC","INTOLERANT WITTICISM","ET CETERA, ETC.","WHOLE BELOW THE WATERLINE","JAMBS KICKED OUT","NOBODY HOME","MORPH ON DEMAND","PLASTICULE","CONFIGURED FOR DUE DENSITY","THE ENCUMBRANCE OF A CIRCLE"]
+
+passClues: passClues + wt[Math.floor(random.fraction*wt.length)] + '<br />'
+--
+
+
+10.  Passage: "tracker"
+
+[if r1===true && r2===true && r3===true && r4===true && r5===true && r6===true]
+<p style="text-align: center">
+[[inward ->INSIDE]]
+</p>
+
+
+11.  Passage: "INSIDE"
+
+r: random.d6
+--
+**~~inside the box~~**    
+So here we are -- turning outside in -- reaching the heart of the matter -- coming down to core.
+
+Moment of truth... or not:  _**what's in the box?**_
+
+[if r===1]
+{cycling link for: 'answer', choices: ['puzzle','nothingness','illusion','unknowing','secrecy','concealment','hope']}
+[cont'd]
+
+[if r===2]
+{cycling link for: 'answer', choices: ['void','emptiness','vacancy','disappointment','frustration','hope','nullity']}
+[cont'd]
+
+[if r===3]
+{cycling link for: 'answer', choices: ['dreams','beasts','sex','darkness','hope','enigma','tragedy']}
+[cont'd]
+
+[if r===4]
+{cycling link for: 'answer', choices: ['you','they','me','hope','nobody','everybody','anybody']}
+[cont'd]
+
+[if r===5]
+{cycling link for: 'answer', choices: ['rope','dope','hope','rope','pope','soap','canteloupe']}
+[cont'd]
+
+[if r===6]
+{cycling link for: 'answer', choices: ['aporia','hope','alea','agon','ilinx','mimesis','ludus']}
+[cont'd]
+
+_**[[REVEAL]]**_
+
+
+
+
+12.  Passage: "Reveal"
+
+[if answer==='hope']
+{embed image: 'finish.png', alt: 'Swallow in flight'}
+[else]
+The box retains its mystery.  
+[[Play on...->And... box]]
+

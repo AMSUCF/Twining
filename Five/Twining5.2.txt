@@ -1,0 +1,54 @@
+TWINING EXERCISE 5.2 - SPOOKY
+Uses Chapbook
+
+1.  Passage: "wordcloud"
+
+words: ['groan','splatter','apparition','testament','Abigail','unliving','rupture','invasion','ovoid','pulsing mass','pululating','unquiet','blood-chilling','viscera','abomination','immense','beyond the veil','partly decomposed','unnatural fusion','funebrous','rotting fruit','spoiled meat','shambling','shade','axehead','severing','unreasoning','revenant','shrieks','damnation','mute','ancient druids','shamanic rites','icy fingers','Thaddeus','taking souls','trembling','waves of dread','raw','reeling','unholy celebrations','flesh','corpselight','teeming','in the house','while you sleep','ichor','weeping','incantation','curse','dare not look','unnameable','indescribable','eyeless sockets','smoldering remains','Mr. Craunch','forbidden','vile presence','soul destroying','bloodless','past all hope','condemned','nasty','icky']
+
+theLink1: words[Math.floor(random.fraction*words.length)]
+theLink2: words[Math.floor(random.fraction*words.length)]
+theLink3: words[Math.floor(random.fraction*words.length)]
+
+breakers: ['<br />','<br /><br />','<br /><br /><br />']
+vSpace1: breakers[Math.floor(random.fraction*breakers.length)]
+vSpace2: breakers[Math.floor(random.fraction*breakers.length)]
+vSpace3: breakers[Math.floor(random.fraction*breakers.length)]
+
+hSpace1: "<div style='text-indent:" + random.d10 + "em'>"
+hSpace2: "<div style='text-indent:" + random.d10 + "em'>"
+hSpace3: "<div style='text-indent:" + random.d10 + "em'>"
+
+exitPos: random.d4
+--
+{vSpace1}
+{hSpace1}
+[if exitPos===1 && random.coinFlip]
+[[Begin]]
+[else]
+[[{theLink1}->wordcloud]]
+</div>
+[cont'd]
+
+{vSpace2}
+{hSpace2}
+[if exitPos===2 && random.coinFlip]
+[[Begin]]
+[else]
+[[{theLink2}->wordcloud]]
+</div>
+[cont'd]
+
+{vSpace3}
+{hSpace3}
+[if exitPos===3 && random.coinFlip]
+[[Begin]]
+[else]
+[[{theLink3}->wordcloud]]
+</div>
+
+
+2.  Passage "Begin"
+
+A tale of mind-bending horror starts here.
+
+

@@ -1,0 +1,23 @@
+BONUS EXAMPLE 3A - JAVASCRIPT TEXT GENERATOR (RANDOMIZED)
+HTML-JavaScript
+
+<script src="generator.js"></script>
+<script>
+	textArray = new Array();
+
+	function writeUp(){
+		//push on a new line
+		textArray.push(generate());
+		//trim top line
+		if(textArray.length==13) textArray.shift()
+		//output
+		document.getElementById("out").innerHTML = "";
+		for(var i=0; i<textArray.length; i++){
+			outIt(textArray[i]);
+		}
+		theTimeout = setTimeout(writeUp, 1000);
+	}
+</script>
+
+***
+NOTE: the "generator" script from the previous example must be copied to the external file "generator.js"

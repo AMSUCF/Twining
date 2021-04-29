@@ -1,0 +1,36 @@
+TWINING EXERCISE 2.3 - PROGRESSIVE
+Uses Chapbook
+
+**
+Note it is necessary to use [cont] to make the backlink indepedent from the [if] tests.
+
+Also note how we re-deploy the "Tick tock" link when the count exceeds 4, opening the way to the second passage.
+**
+
+1.  Passage: "Tick tock"
+
+[if passage.visits === 1]
+You are in a dimly lit room filled with gray shapes.
+
+[if passage.visits === 2]
+You are in a dimly lit room filled with gray shapes, one of which is moving.
+
+[if passage.visits === 3]
+You are in a dimly lit room filled with gray shapes, the largest of which is moving rapidly toward you.
+
+[if passage.visits === 4]
+You are in a dimly lit room filled with gray shapes, the largest of which is human-sized, covered with fur, and leaping onto your chest.
+
+[if passage.visits > 4]
+You are in a dimly lit room with a big, friendly Irish Wolfhound.  Down, Seamus, nice doggie!
+
+{link to: 'Next', label: 'Tick tock'}
+
+[if passage.visits < 5]
+[[Tick tock ->This is Where You Are]]
+
+
+2.  Passage: "Next"
+
+_Have I ever told you the one about the priest, the optician, and the Belgian national anthem?_ Seamus inquires.
+

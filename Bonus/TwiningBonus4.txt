@@ -1,0 +1,30 @@
+BONUS EXAMPLE 4 FALLING TEXT (SINGLE LINE)
+HTML-JavaScript
+
+<script src="generator.js"></script>
+
+<script>
+	function setUp(){
+		theDIV = document.getElementsByTagName("DIV")[0]
+		theDIV.innerHTML = generate()
+		theLeft = r(600)
+		theDIV.style.left = theLeft + "px"
+		theTop = 0 - r(100)
+		theDIV.style.top = theTop + "px"
+		animate()
+	}
+
+	function animate(){
+
+		theDIV = document.getElementsByTagName("DIV")[0]
+		theTop += 5;
+		document.getElementsByTagName("DIV")[0].style.top = theTop + "px";
+		if(theTop > 500){
+			setUp();
+		}
+		else{
+			theTimeout = setTimeout(animate,50);
+		}
+
+	}
+</script>

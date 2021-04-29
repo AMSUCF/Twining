@@ -1,0 +1,36 @@
+TWINING EXERCISE 4.3 - SOUND IT OUT
+Uses SugarCube
+
+1. Storyinit Passage - cache audio:
+
+<<cacheaudio "background" "background.mp3" "background.wav">>
+<<cacheaudio "fireburning" "Fire_Burning-JaBa.mp3" "Fire_Burning-JaBa.wav">>
+
+2. Lost Passage - play audio:
+
+<<audio “background” stop>>
+<<audio "fireburning" volume 0.5 fadeoverto 5 0>>
+
+3. Controls Passage - play background music:
+
+<<audio "background" loop play>>
+
+4. Search Passage - add images:
+
+<<include "Countdown">>
+You look for any text you can recognize, but there's nothing helpful. 
+There are three well-worn buttons on the side of the console, but instead of words they only bear symbols that you don't recognize. If they were letters, they'be been lost to oils and waste.
+
+[img[shape.gif][one]]
+[img[shape2.gif][two]]
+[img[shape3.gif][three]]
+
+You might as well press one.
+
+5. Story Stylesheet - adding background image:
+
+body {
+  background-image: [img[stars.gif]];
+  color: white;
+  font-size: 200%;
+}

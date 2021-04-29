@@ -1,0 +1,25 @@
+1.  Good Day!
+
+~~{now.weekdayName}~~
+
+[if now.weekdayName === "Sunday"]
+Our story begins with a dreadful hangover.
+
+[if now.weekdayName === "Monday"]
+Our story opens with a deep sense of dread.  Not again.  
+
+[if now.weekdayName === "Tuesday"]
+Our story starts out with a certain doomed resignation.
+
+[if now.weekdayName === "Wednesday"]
+Our story figures it might as well get on with itself.
+
+[if now.weekdayName === "Thursday"]
+Our story begins restlessly, anxious to be over.
+
+[if now.weekdayName === "Friday"]
+Our story wants to know if it's 5:00 yet.
+
+[if now.weekdayName === "Saturday"]
+Our story will get back to you after this round of drinks.
+

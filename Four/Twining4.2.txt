@@ -1,0 +1,69 @@
+TWINING EXERCISE 4.2 - CHANGING STYLES
+Uses SugarCube
+
+1. Story Stylesheet:
+
+body {
+  background-color: #A9A9A9;
+  color: white;
+  font-size: 200%;
+}
+a {
+ color: purple; 
+}
+body.red {
+  background-color: red;
+  color: white;
+  font-size: 250%;
+}
+body.green {
+  background-color: green;
+  color: white;
+  font-size: 250%;
+}
+body.yellow {
+  background-color: yellow;
+  color: black;
+  font-size: 250%;
+}
+
+2. Story Stylesheet - Add animations:
+
+.disappear {
+	opacity: 0;
+	animation-name: fadeOutOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 5s;
+}
+@keyframes fadeOutOpacity {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+3. Lost passage - integrating animation:
+
+@@.disappear;The rumbling lets you know it's too late - that, and the sinking feeling. 
+
+The flames are the last thing you see.@@
+
+4. Story stylesheet - adding classes:
+
+.greenLink a { color: green; }
+.redLink a { color: red; }
+.yellowLink a { color: yellow; }
+
+5. Controls passage - using classes:
+
+You're looking at buttons. Like, old school Wing Commander, you're going to need a manual for this, unlabeled buttons. You can hear your cell phone beeping the warning alerts as you look for something marked throttle.
+<<set $seconds to 30>>
+<<include "Countdown">>
+Press the @@.greenLink;[[green|Green]]@@ button
+Press the @@.yellowLink;[[yellow|Yellow]]@@ button
+Press the @@.redLink;[[red|Red]]@@ button
+[[Look for an index|Search]]
+

@@ -1,0 +1,67 @@
+TWINING EXAMPLE 2.6 - Carousel
+Uses Harlowe
+
+1.  01
+
+Room 01
+
+The Eye of Imus (click: "Eye") [(set: $hasAmulet to false)]
+
+{
+(live: 2s)[
+    (if: $hasAmulet is not true)[(go-to: "02")]
+]
+(stop:)
+}
+
+2.  02
+
+Room 02
+
+The Stone of Blarney (click: "Stone") [(set: $hasAmulet to false)]
+
+{
+(live: 2s)[
+    (if: $hasAmulet is not true)[(go-to: "03")]
+]
+(stop:)
+}
+
+3.  03
+
+Room 03
+
+The Amulet of Immobility (click: "Amulet") [(set: $hasAmulet to true)]
+{
+(live: 2s)[
+    (if: $hasAmulet is not true)[(go-to: "04")]
+	(else:) [Congratulations, you have stopped the Carousel.]
+]
+(stop:)
+}
+
+4.  04
+
+Room 04
+
+The Chalice of Malice (click: "Chalice") [(set: $hasAmulet to false)]
+
+{
+(live: 2s)[
+    (if: $hasAmulet is not true)[(go-to: "05")]
+]
+(stop:)
+}
+
+5.  05
+
+Room 05
+
+The Charm of Bracelets (click: "Charm") [(set: $hasAmulet to false)]
+
+{
+(live: 2s)[
+    (if: $hasAmulet is not true)[(go-to: "01")]
+]
+(stop:)
+}

@@ -1,0 +1,25 @@
+BONUS EXAMPLE 1 - JAVASCRIPT TEXT SELECTION
+HTML-JavaScript
+
+<script>
+	sourceString = "firefly,omnivore,beauty,greeble,Provo,whimsical,flatiron,Mme. Ortega y Bullfrog";
+
+	function writeUp(){
+		for(var i=0; i<5; i++){
+			outIt(g(sourceString) + " ")
+		}
+	}
+
+	function g(source){
+		theArray = source.split(",");
+		return theArray[r(theArray.length)];
+	}
+
+	function r(range){
+		return Math.floor(Math.random()*range)
+	}
+
+	function outIt(what){
+		document.getElementById("out").innerHTML += what
+	}
+</script>

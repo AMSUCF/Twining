@@ -1,0 +1,12 @@
+sentence me
+
+subjs: ["Edgar","The cat","Edgar the cat","Gorgomon","Stephane Grapelli's typewriter","An astrolabe","Mrs. Macaleister","An implausible gravy"]
+theSubj: subjs[Math.floor(random.fraction*subjs.length)]
+verbs: ["eschews","thrashes","adores","invalidates","steals","withholds","accuses","dethrones"]
+theVerb: verbs[Math.floor(random.fraction*verbs.length)]
+objs: ["Niall","the planet Mercury","Episode Three","our better angels","Stephane Grapelli's typewriter","furiously","space and time","to no discernible purpose"]
+theObj: objs[Math.floor(random.fraction*objs.length)]
+--
+{theSubj} {theVerb} {theObj}.
+
+[[Again! ->sentence me]] 

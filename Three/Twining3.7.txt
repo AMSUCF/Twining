@@ -1,0 +1,46 @@
+TWINING EXAMPLE 3.7 - Name game (after Porpentine)
+Uses Chapbook
+
+1.  Choose Your Time
+
+theDays: ['Scum','Monster','Tomb','Weed','Thirst','Frieswiththat','Scatter']
+
+theMonths: ['Waking','Making','Darkening','Night']
+--
+Today is a {dropdown menu for: 'theDay', choices: theDays}day in the {dropdown menu for: 'theMonth', choices: theMonths} month.
+
+
+[[So it is; who am I? ->Your Name]]
+
+2.  Your Name
+
+firsts: ['Drag','Mars','Mol','Bren','Hal','Dom']
+
+seconds: ['rak','ra','della','bim','bang','rica','dottir','goth','gren','thing']
+
+thirds: ['Hamble','Rumble','Storm','Mountain','River','Valley','Moose','Squirrel']
+
+fourths: ['hand','mind','foot','body','thumb','weasel','love','song']
+
+nameFirst: firsts[Math.floor(random.fraction*firsts.length)]
+nameSecond: seconds[Math.floor(random.fraction*seconds.length)]
+nameThird: thirds[Math.floor(random.fraction*thirds.length)]
+nameFourth: fourths[Math.floor(random.fraction*fourths.length)]
+
+id: nameFirst+nameSecond + " " + nameThird+nameFourth
+
+id (theDay==='Monster' && theMonth==='Waking'): 'Slam Danghandle'
+id (theDay==='Weed' && theMonth==='Making'): 'Leah Romavant'
+id (theDay==='Tomb' && theMonth==='Darkening'): 'Gnowth Marvydink'
+id (theDay==='Thirst' && theMonth==='Night'): 'Crassa Foomstoffer'
+id (theDay==='Frieswiththat' && theMonth==='Waking'): 'Blastgret Stimsocket'
+id (theDay==='Scatter' && theMonth==='Making'): 'Meera Upfallen'
+id (theDay==='Scum' && theMonth==='Darkening'): 'Kristel Vannafoy'
+id (theDay==='Monster' && theMonth==='Night'): 'Markie Mistmother'
+--
+[align center]
+Born on a {theDay}day of the {theMonth} month, you are:
+
+~~{id}~~
+
+

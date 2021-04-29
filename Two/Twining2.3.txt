@@ -1,0 +1,8 @@
+TWINING EXAMPLE 2.2 - Stretchtext
+Uses Chapbook
+
+1.  Our story unfolds
+
+Sheboygan Slim made a {reveal link: 'remark', text: 'rude and uncalled for observation about the dubious parentage of the Kenosha Kid, not omitting to cast doubt upon the breeding of the horse he rode in on'}.
+
+The Kid {reveal link: "replied.", text: "allowed as how this being a free country every honest feller was entitled to his opinion, but wouldn't the gent be more comfortable in some part of the Territory where the Kid's bowie knife wasn't hard up against his fifth rib?"}

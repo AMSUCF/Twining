@@ -1,0 +1,73 @@
+1. Passage: "Readout"
+
+passages: ["01","02","03","04","05","06","07","08","09","10"]
+
+passage1: passages[Math.floor(random.fraction*passages.length)]
+passage2: passages[Math.floor(random.fraction*passages.length)]
+passage3: passages[Math.floor(random.fraction*passages.length)]
+passage4: passages[Math.floor(random.fraction*passages.length)]
+passage5: passages[Math.floor(random.fraction*passages.length)]
+countBase: random.d100
+cb1: countBase+random.d5
+countBase: cb1
+cb2: countBase+random.d5
+countBase: cb2
+cb3: countBase+random.d5
+countBase: cb3
+cb4: countBase+random.d5
+countBase: cb4
+cb5: countBase+random.d5
+--
+Situation Report {cb1}:
+{embed passage: passage1}
+
+Situation Report {cb2}:{embed passage: passage2}
+
+Situation Report {cb3}:{embed passage: passage3}
+
+Situation Report {cb4}:{embed passage: passage4}
+
+Situation Report {cb5}:{embed passage: passage5}
+
+[align right]
+[[Update ->Readout]] 
+
+2.  Passage: "01"
+
+The specimen emits radiation in the X-band.
+
+3.  Passage: "02"
+
+Density of the specimen appears to be increasing.
+
+4.  Passage: "03"
+
+The specimen does not respond to repeated perturbation.
+
+5.  Passage: "04"
+
+Whoooo's a good specimen?!
+
+6.  Passage: "05"
+
+The specimen may be entirely anoechoic.
+
+7.  Passage: "06"
+
+The density of the specimen has in fact decreased.
+
+8.  Passage: "07"
+
+Attempts to ascertain the origin of the specimen are ongoing.
+
+9.  Passage: "08"
+
+We were briefly unable to locate the specimen.
+
+10. Passage: "09"
+
+The specimen may have assimilated Technician Anderson.
+
+11. Passage: "10"
+
+The specimen has no observable effulgence.

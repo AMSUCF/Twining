@@ -1,0 +1,29 @@
+TWINING EXERCISE 5.4 - A TUNE OUT OF SEASON
+Uses Chapbook
+
+1.  Passage: "A Tune Out of Season"
+
+Lunch with insufferable Uncle Buster in the Tumbolia Room.  You would do anything to escape.  "Why was Ten glancing so warily up the numberline?" the old man asks, you suppose you should say rhetorically, though that's far too nice a word.  "Because...?"
+
+Meanwhile some conventioneers at the bar are attempting a seasonal ditty, though it is the middle of {cycling link for: 'month', choices: ['June', 'July', 'August']}.  They have some odd ideas about the lyrics:
+
+"{cycling link for: 'song', choices: ['12 mummers slumming', '11 typers griping', '10 Fords a-beeping', '9 maybes branching', '8 trades a-bilking', '7 swamps a-brimming', '6 tweets a-braying', 'FIVE OLD SPRINGS!', '4 appalling nerds', '3 clenched pens', '2 hurtful shoves', 'AND SOME CARTILAGE TO REPAIR KNEES!']}."
+
+To further undermine your sanity, the couple at the next table have started flinging breadsticks at one another.  They are about to proceed to the cutlery.  "Let me put this in a language you will understand," the lady is saying: "{cycling link for: 'word', choices: ['MEIYOU','NE','NAY','NAE','IIYE','NON','NIX','NEM','NEIN']}!"
+
+[[Solution?]]
+
+
+2.  Passage: "Solution?"
+
+[if month === 'July' && song === '8 trades a-bilking' && word === 'NEIN']
+"Is that the time?" you notice.  "Gosh, late for that root canal!"  And out the door.
+[else]
+You're stuck here until you solve the stupid riddle.  [[Keep trying->A Tune Out of Season]]
+
+[if passage.visits === 1]
+Hint: three numbers in sequence, horrible pun...
+[if passage.visits === 2]
+Hint: three numbers in sequence, horrible pun, numerical cannibalism...
+[if passage.visits === 3]
+OK, enough hints: BECAUSE SEVEN ATE NINE!

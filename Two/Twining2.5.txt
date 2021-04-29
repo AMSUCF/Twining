@@ -1,0 +1,55 @@
+1.Table 12
+
+You've almost finished the seating chart for the Bunstables' annual beet roast and Scrabble tournament.  Just two places remain at Table 12. 
+
+In the first seat let's put {cycling link for: "gent", choices: ["someone","Lord Magnavox","Nasty Louie","Cousin Sue"]}.
+
+And on the left, {cycling link for: "lady", choices: ["someone else","Lady Splatt-Simple","Violet Femme","Second Cousin Laraine"]}.
+
+[[Okay then! ->Decision]]
+
+2.Decision
+
+You have seated {gent} next to {lady}.
+
+[if gent === "someone" || lady === "someone else"]
+You do realize 'someone' is not an actual person, right?
+
+[if gent === "Lord Magnavox" & lady === "Lady Splatt-Simple"]
+They'll SO enjoy reminiscing about how he threw her younger brother from that balloon.
+
+[if gent === "Nasty Louie" & lady === "Violet Femme"]
+Now THERE'S a pair.
+
+[if gent === "Cousin Sue" & lady === "Second Cousin Laraine"]
+Hm.  Yes.  Well.
+
+[continue]
+[[Hmm ->Table 12]]
+
+[[Outcome]]
+
+3.  Outcome
+
+happy: gent==="Nasty Louie" && lady==="Violet Femme"
+veryHappy: gent==="Cousin Sue" && lady==="Second Cousin Laraine"
+unhappy: gent==="someone" && lady==="someone else"
+veryUnhappy: gent==="Lord Magnavox" && lady==="Lady Splatt-Simple"
+--
+[if happy]
+We're sure {gent} and {lady} will get on like a house afire.
+
+[if veryHappy]
+Bringing {gent} and {lady} together is the only decent thing you have ever done.
+
+[if unhappy]
+We're sure something happened but no one can remember what.
+
+[if veryUnhappy]
+The evil encounter between {lady} and {gent} was the first step toward disaster.
+
+[if !happy && !veryHappy && !unhappy && !veryUnhappy]
+The evening was neither triumph nor disaster.
+
+[continue]
+{restart link, label: "Start over"}

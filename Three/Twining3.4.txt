@@ -1,0 +1,21 @@
+[JavaScript]
+sourceArray = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday')
+
+trackArray = new Array()
+trackArray.push(99)
+rNum = 99
+
+function randy(){
+  while(trackArray.includes(rNum)){
+	  rNum = Math.floor(Math.random()*sourceArray.length)
+  }
+ trackArray.push(rNum)
+ return sourceArray[rNum]
+}
+
+for(var i=0; i<7; i++){
+	write(randy()+'<br>')
+	}
+	
+[continue]
+[[Again ->Loopy]]

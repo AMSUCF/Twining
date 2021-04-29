@@ -1,0 +1,46 @@
+TWINING EXERCISE 4.1 - END TIMES
+Uses SugarCube
+
+1. Passage "Countdown"
+
+<span id="countdown">Planetary implosion in $seconds seconds</span>
+<<silently>>
+    <<repeat 1s>>
+        <<set $seconds to $seconds - 1>>
+        <<if $seconds gt 0>>
+            <<replace "#countdown">>Planetary implosion in $seconds seconds<</replace>>
+        <<else>>
+			<<replace "#countdown">><</replace>>
+			<<goto "Lost">>
+			<<stop>>
+        <</if>>
+    <</repeat>>
+<</silently>>
+
+2. Passage "Beginnings"
+
+You’ve come this far. The B Arc was full (too many telephone sanitizers), first class was always out of reach, and this hunk of junk about to take off is the last ship off this rock before it hits. If only you knew how to fly it.
+
+[[Try.|Controls]]
+
+
+3. Passage "Controls"
+
+You're looking at buttons. Like, old school Wing Commander, you're going to need a manual for this, unlabeled buttons. You can hear your cell phone beeping the warning alerts as you look for something marked throttle.
+https://media.giphy.com/media/CKRx4oUu3dzLa/source.gif
+<<set $seconds to 30>>
+<<include "Countdown">>
+[[Press the green button|Green]]
+[[Press the yellow button|Yellow]]
+[[Press the red button|Red]]
+[[Look for an index|Search]]
+
+
+4. Passage "Lost"
+
+The rumbling lets you know it's too late - that, and the sinking feeling. 
+The flames are the last thing you see.
+
+5. Story JavaScript File:
+
+UIBar.destroy();

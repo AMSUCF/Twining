@@ -1,0 +1,47 @@
+TWINING EXERCISE 5.1 - LABYRINTH
+Uses Chapbook
+
+1.  Passage: "Origin"
+
+In the
+
+>[[green bag]]
+>[[vicinity of metaphor]]
+
+
+2.  Passage: "green bag"
+
+In the green bag
+
+>[[we found]]
+>[[it was possible]]
+
+
+3.  Passage: "we found"
+
+In the green bag we found
+
+>[[the recipe for Detroit]]
+>[[a rich deposit of language]]
+
+
+4.  Passage: "the recipe for Detroit"
+
+In the green bag we found the recipe for Detroit...
+
+cars the size of cars<br />
+implying<br />
+a continent of erasure<br />
+in the scattering of a people<br />
+plus two ideas,<br />
+unpromising,<br />
+and the given name of an advertised lawyer<br />
+featuring seven types of ambiguity,<br />
+overlooking perhaps a sunrise,<br />
+and one sad invention<br />
+some statistics,<br />
+disaggregated,<br />
+with a warm place to<br />
+put the results.
+
+[[Again->Origin]] 

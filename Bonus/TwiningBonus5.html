@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Example 5.5 - It's Raining Story</title>
+
+	<style type="text/css">
+		div{
+			font: 18pt Palatino; position: absolute;
+		}
+
+	</style>
+
+	<script src="generator.js"></script>
+
+	<script>
+		leftNum = new Array(0,0,0,0,0);
+		topNum = new Array(0,0,0,0,0);
+		DIVSpeed = new Array(0,0,0,0,0);
+
+		function startUp(){
+			for(var i=0; i<5; i++){
+				reset(i);
+			}
+			theInterval = setInterval(animate, 50);
+		}
+
+		function reset(which){
+			theDIV = document.getElementsByTagName("DIV")[which];
+			DIVSpeed[which] = 3 + r(5);
+			theDIV.innerHTML = generate();
+			leftNum[which] = Math.round(Math.random()*600);
+			theDIV.style.left = leftNum[which] + "px";
+			topNum[which] = 0 - Math.round(Math.random()*100);
+			theDIV.style.top = topNum[which] + "px";
+		}
+
+		function animate(){
+			for(var i=0; i<5; i++){
+				topNum[i] += DIVSpeed[i];
+				theDIV = document.getElementsByTagName("DIV")[i]
+				theDIV.style.top = topNum[i] + "px";
+				if(topNum[i] > 500) reset(i);
+			}
+
+		}
+	</script>
+
+</head>
+
+<body onLoad="startUp()" width: 600px>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+
+</html>

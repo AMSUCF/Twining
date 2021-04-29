@@ -1,0 +1,18 @@
+TWINING 2.5 - CHANGING ROOM
+(Uses Harlowe)
+
+1. Changing Room
+
+You (either: "are","find yourself","awaken","begin to exist","materialize") in (either: "the UNREADY ROOM","the CHANGE EXCHANGE","a SHIFTY SORT OF LOCATION","a PLACE of POSSIBILITIES","ZONE UNKNOWN").
+
+There is a(either: " zither","n astrolabe","n Earthkey"," chef's hat"," trilobite"," ghost weasel") to the (either: "left","right","northeast","windward") of a(either: " large","n obvious"," cryptic"," throbbing") (either: "snowman","theater critic","armoire","pyramid","tank trap").
+
+You can see (either: "a blank wall","an [[Open Door!->Done]]","nothing of interest","a wall that is blank","a blankish wall of a wall","a wall of blankness","the blankest wall in the world","an unsatisfying wall") here.
+
+[[Change the world... ->Changing Room]]
+
+2.  Done
+
+Plus ça change.
+
+[[Try Again ->Changing Room]] 

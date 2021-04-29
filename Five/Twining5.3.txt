@@ -1,0 +1,50 @@
+TWINING EXERCISE 5.3 - ACTIVE MEASURES
+Uses Chapbook
+
+1.  Passage: "Scene"
+
+{embed passage: 'Action!'}
+
+{embed passage: 'Action!'}
+
+{embed passage: 'Action!'}
+
+{embed passage: 'Action!'}
+
+
+2.  Passage: "Action!"
+
+topics: ['astrometry','fine wines','outwitting the Troll','contents of the box','the key','stuff']
+theTopic: topics[Math.floor(random.fraction*topics.length)]
+
+escapes: ['Refuse all further action','Prefer not to','Declare an adventure strike','Stop suspending disbelief','Stop putting up with this crap','Have enough of this']
+theEscape: escapes[Math.floor(random.fraction*escapes.length)]
+
+phrase1: theVerb + ' the ' + theNoun
+phrase2: iVerbs[Math.floor(random.fraction*iVerbs.length)]
+phrase3: "Go " + theDir
+phrase4: theAskTell + " " + thePerson + " about " + theTopic
+phrase5: "Give the " + theNoun + " to " + thePerson
+phrase6: "Take the " + theNoun + " from " + thePerson
+
+theRoll: Math.ceil(random.fraction*7)
+--
+[if theRoll===1]
+[[{phrase1}->Scene]]
+[if theRoll===2]
+[[{phrase2}->Scene]]
+[if theRoll===3]
+[[{phrase3}->Scene]]
+[if theRoll===4]
+[[{phrase4}->Scene]]
+[if theRoll===5]
+[[{phrase5}->Scene]]
+[if theRoll===6]
+[[{phrase6}->Scene]]
+[if theRoll===7]
+[[{theEscape}->Escape]]
+
+
+3.  Passage: "Escape"
+
+And so our story begins for real.

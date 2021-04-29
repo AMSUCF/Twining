@@ -1,0 +1,23 @@
+TWINING EXERCISE 2.1 - LOKI ON THE LINKS
+Uses Chapbook
+
+1.  Passage: "Loki's Work"
+
+The Trickster has done it again, hiding the hypertext links.  Some words lead to [[Asgard]], some to [[Migard]], but which?  [[Ship]], [[hammer]], [[meadhorn]], [[goatsbreath]].  You feel a [[thunder]] coming on.
+
+***
+
+Fill in resulting passages as you like.
+
+Following the instructions in the chapter, enter the following in the VARIABLES SECTION of the first passage:
+
+config.style.page.font: "Iowan Old Style/Constantia/Georgia/serif 18"
+config.style.page.color: "gray-9 on white"
+config.style.page.link.font: "none"
+config.style.page.link.color: "gray-9"
+config.style.page.link.lineColor: "red-8"
+config.style.page.link.active.color: "gray-9"
+config.style.page.header.font: "16"
+config.style.page.header.link.font: "small caps"
+config.style.page.footer.font: "16"
+config.style.page.footer.link.font: "small caps"

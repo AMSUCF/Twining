@@ -1,0 +1,94 @@
+TWINING EXERCISE 4.5 - MOOD IMAGERY
+Uses SugarCube and Trice
+
+1. Begin passage - base SVG:
+
+<<set $myColor to trace("gColor")>>
+<<print '<svg><line x1="0" y1="0" x2="200" y2="200" stroke-width="1" stroke="' + $myColor + '"/></svg>'>>
+
+2. gNum passage - tag "grammar":
+
+80
+100
+120
+140
+160
+180
+200
+220
+240
+260
+280
+300
+
+3. gColor passage - tag "grammar":
+
+purple
+blue
+gainsboro
+silver
+grey
+teal
+navy
+cyan
+indigo
+orchid
+lavender
+plum
+
+4. Begin passage - add variables:
+
+<<set $myColor to trace("gColor")>>
+<<set $myNum to trace("gNum")>>
+
+<<print '<svg><line x1="0" y1="0" x2="'+$myNum+'" y2="'+$myNum+'" stroke-width="1" stroke="' + $myColor + '"/></svg>'>>
+
+5. gY passage - tag "grammar":
+
+50
+100
+150
+200
+250
+300
+350
+400
+450
+
+6. gX passage - tag "grammar":
+
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+
+7. gOpacity passage - tag "grammar":
+
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+
+8. gEllipse passage - tag "grammar"
+
+<ellipse cx=\"#gX#\" cy=\"#gY#\" rx=\"#gNum#\" ry=\"#gNum#\" style=\"fill:#gColor#;stroke:#gColor#;stroke-width:2;opacity:#gOpacity#\" />
+
+9. Screen passage:
+
+<<trace "<svg width='1024' height='512'>#gEllipse##gEllipse##gEllipse##gEllipse##gEllipse##gEllipse##gEllipse##gEllipse##gEllipse##gEllipse##gEllipse##gEllipse##gEllipse##gEllipse##gEllipse##gEllipse##gEllipse##gEllipse##gEllipse#</svg>">>
+
+10: Begin passage:
+
+<<set $myLink to trace("gCodeNouns.capitalize.a")>>
+[[$myLink|Screen]]
+

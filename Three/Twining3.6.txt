@@ -1,0 +1,88 @@
+TWINING EXAMPLE 3.4 - FREE-VERSE GENERATOR
+Uses Chapbook
+
+1. Opener
+
+r: random.d6
+open: 'boo'
+open (r === 1): 'something I heard no one say'
+open (r === 2): 'now this'
+open (r === 3): 'between some dreams I thought I heard'
+open (r === 4): 'you might not believe this'
+open (r === 5): 'this much the night allowed me'
+open (r === 6): 'a spider spun this for me once'
+--
+{open}
+{embed passage: 'Middle 1'}
+{embed passage: 'Middle 2'}
+{embed passage: 'Middle 3'}
+{embed passage: 'Middle 4'}
+{embed passage: 'Finisher'}
+
+[[Again ->Opener]]
+
+2.  Middle 1
+
+r: random.d6
+
+m_1 (r===1): 'water is a silence'
+m_1 (r===2): 'a silence has come upon the waters'
+m_1 (r===3): 'we are the sum of waters'
+m_1 (r===4): 'drink your water in silence'
+m_1 (r===5): 'the silence of waters'
+m_1 (r===6): 'water is never really silent'
+--
+{m_1}
+
+3.  Middle 2
+
+r: random.d6
+
+m_2 (r===1): 'imagine the invention of water'
+m_2 (r===2): 'every moment is the beginning of invention'
+m_2 (r===3): 'the spark of nothing less is this'
+m_2 (r===4): 'for seeing the word so far'
+m_2 (r===5): 'having carried words no further'
+m_2 (r===6): 'water could not be silent'
+--
+{m_2}
+
+4.  Middle 3
+
+r: random.d6
+
+m_3 (r===1): 'quantify your blessings'
+m_3 (r===2): 'render your account'
+m_3 (r===3): 'spill out the bag of content'
+m_3 (r===4): 'say what you contain'
+m_3 (r===5): 'read the bill of particulars'
+m_3 (r===6): 'gather up the washing'
+--
+{m_3}
+
+5.  Middle 4
+
+r: random.d6
+
+m_4 (r===1): 'dreams beasts sex'
+m_4 (r===2): 'monkeys jewels and fabulous stories'
+m_4 (r===3): 'a rock a mandarin a twisted pike'
+m_4 (r===4): 'larks crows kingfishers calumets'
+m_4 (r===5): 'gazettes and galley proofs'
+m_4 (r===6): 'whelks whales and waterfowl'
+--
+{m_4}
+
+6.  Finisher
+
+r: random.d6
+
+finish (r===1): 'and that was something said'
+finish (r===2): 'and nothing more of time'
+finish (r===3): 'and then the rain came'
+finish (r===4): 'until we end our song'
+finish (r===5): 'or this and nothing more'
+finish (r===6): 'the machine stops'
+--
+{finish}
+

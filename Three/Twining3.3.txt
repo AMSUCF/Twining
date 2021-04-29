@@ -1,0 +1,18 @@
+[Javascript]
+t=""
+subjs = new Array("Edgar","The cat","Edgar the cat","Gorgomon","Stephane Grapelli's typewriter","An astrolabe","Mrs. Macaleister","An implausible gravy")
+verbs = new Array("eschews","thrashes","adores","invalidates","steals","withholds","accuses","dethrones")
+objs = new Array("Niall","the planet Mercury","Episode Three","our better angels","Stephane Grapelli's typewriter","furiously","space and time","to no discernible purpose")
+
+function textify(){
+	t = subjs[Math.floor(Math.random()*subjs.length)] + " "
+	t += verbs[Math.floor(Math.random()*verbs.length)] + " "
+	t += objs[Math.floor(Math.random()*objs.length)] + ".<br>"
+}
+for(i=0; i<7; i++){
+	textify()
+	write(t)
+}
+
+[cont]
+[[More ->Tales from the Script]] 

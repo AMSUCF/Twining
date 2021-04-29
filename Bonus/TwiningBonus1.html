@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Bonus Example 1</title>
+	<style type="text/css">
+		DIV{
+			font: 18pt Cambria; padding: 20px;
+		}
+	</style>
+
+	<script>
+		sourceString = "firefly,omnivore,beauty,greeble,Provo,whimsical,flatiron,Mme. Ortega y Bullfrog";
+
+		function writeUp(){
+			for(var i=0; i<5; i++){
+				outIt(g(sourceString) + " ")
+			}
+		}
+
+		function g(source){
+			theArray = source.split(",");
+			return theArray[r(theArray.length)];
+		}
+
+		function r(range){
+			return Math.floor(Math.random()*range)
+		}
+
+		function outIt(what){
+			document.getElementById("out").innerHTML += what
+		}
+	</script>
+
+</head>
+
+<body width: 800px onLoad="writeUp()">
+	<DIV id="out"></DIV>
+</body>
+
+
+</html>

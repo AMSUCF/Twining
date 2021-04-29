@@ -1,0 +1,111 @@
+TWINING EXERCISE 4.4 - TRACERY AND EXTERNAL LIBRARIES
+Uses SugarCube and Trice
+
+1. Tracery grammar - for reference:
+
+{
+"origin": ["#codeVerbs# the #craftNouns#, #codeNouns# #craftVerbs#"],
+"craftNouns":["album","backing","bargello","barkcloth","basting","batik","batting","bearding","beading","betweens","bias","binding","stitch","nesting","bobbin","tension","chainstitch","emblem","embroidery","frame","sash","gap","gapping","hoop","hooping","lettering","mirror","monogram","needle","nippers","pantograph","tape","puckering","punching","density","design","thread","broadcloth","block","border","calico","charm","die","flannel","feeddogs","paper","sleeve","foot","fabric","loft","long arm","medallion","memory","motif","quilt","fiber","panel","patch","value","unit","seam","fill","facing","hook","scale","satin","punching"],
+"craftVerbs":["appliqué","bind","sew","hem","bridge","fill","press","back","repeat","rotate","stabilize","thread","break","cut","tie","trim","verify","glaze","label","layer","piece","corner"],
+"codeNouns":["algorithm","application","bootstrap","code","structure","data","framework","stack","query","object","function","variable","binary","bug","command","conditional","statement","pattern","server","parameter","grid","pixel","resolution","user","flow","element"],
+"codeVerbs":["decompose","debug","iterate","control","program","run","embed","influence","bounce","optimize","mine","declare","edit","design"]
+}
+
+
+2. Start passage:
+
+Cut and Trace
+
+[[Begin]]
+
+3: gCraftNouns passage - tag "grammar":
+
+basting
+mirror
+lettering
+foot
+fabric
+calico
+loft
+tape
+hooping
+bargello
+sleeve
+block
+border
+
+4. Begin passage:
+
+<<trace "gCraftNouns">>
+
+5. gCraftVerbs passage - tag "grammar":
+
+bind
+sew
+hem
+bridge
+fill
+press
+back
+repeat
+rotate
+stablize
+thread
+
+6. gCodeVerbs passage - tag "grammar":
+
+decompose
+debug
+iterate
+program
+run
+embed
+influence
+bounce
+optimize
+mine
+declare
+edit
+design
+
+7. gCodeNouns passage - tag "grammar":
+
+algorithm
+application
+bootstrap
+code
+structure
+data
+framework
+stack
+query
+object
+function
+variable
+binary
+command
+conditional
+statement
+
+8. gColor passage - tag "grammar":
+
+orange
+blue
+violet
+yellow
+pink
+apricot
+indigo
+green
+grey
+black
+white
+
+9. Begin passage - extended:
+
+<<trace "#gCodeVerbs# the #gCraftNouns#, #gCodeNouns# #gCraftVerbs#">>
+<<trace "#gCraftNouns.capitalize# is #gCodeNouns.a#...">>
+<<trace "#gColor.a.capitalize# #gCodeNouns# #gCraftVerbs.s#">>
+<<set $myNoun to trace("gCraftNouns")>>
+
+$myNoun is $myNoun is $myNoun.
